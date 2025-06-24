@@ -11,6 +11,8 @@ const SneakerShowcase = () => {
   return (
     <div className="relative py-12 px-4">
       {/* Pulse Waveform Base */}
+
+      
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="w-64 h-2 bg-gradient-to-r from-transparent via-neon-cyan to-transparent animate-pulse-glow"></div>
       </div>
@@ -28,8 +30,8 @@ const SneakerShowcase = () => {
         onClick={handleRotate}
       >
         <div 
-          className="w-full h-full transform-gpu transition-transform duration-1000 preserve-3d hover:scale-110"
-          style={{ transform: `rotateY(${rotation}deg) rotateX(-10deg)` }}
+          className="w-full h-full"
+          style={{ transform: `rotateY(${rotation}deg) rotateX(-10deg)`, display:"flex", justifyContent: "center", alignItems: "center" }}
         >
           {/* Sneaker Image */}
           {/* <div className="absolute inset-0 flex items-center justify-center">
@@ -40,7 +42,8 @@ const SneakerShowcase = () => {
             </div>
           </div> */}
 
-          
+            
+          <img style={{ height: "360px" }} src='/assets/assets_task_01jygseh79e2mahf694gdn9hjy_1750762836_img_1.webp'></img>
           
           {/* Glow Effect */}
           <div className="absolute inset-0 flex items-center justify-center">
